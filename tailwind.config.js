@@ -16,9 +16,9 @@ module.exports = {
         '2xl': '1536px',
       },
       fontFamily: {
-        lato: ['Lato', 'sans-serif'],
-        noto: ['Noto', 'sans-serif'],
-        notoSerif: ['Noto Serif', 'serif'],
+        nothing: ['Nothing You Could Do', 'serif'],
+        poppins: ['Poppins', 'sans-serif'],
+  
       },
     },
   },
