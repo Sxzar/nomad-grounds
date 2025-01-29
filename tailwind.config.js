@@ -29,14 +29,10 @@ module.exports = {
     themes: [
       {
         'barbershop': {
-          "primary": "#313131",
-          "primary-content": "#353634",
-          "secondary": "#F8F8F8",
-          "secondary-content": "#413028",
-          "accent": "#d5b480",
-          "accent-content": "#d7cdbf",
-          "base-100": "#313131",
-          "base-200": "#686868",
+          "primary": "#2e2e2e",
+          "secondary": "#754E1A",
+          "accent": "#CBA35C",
+          "base-100": "#fbfbfb",
           "success": "#81c784",
           "warning": "#ffb74d",
           "error": "#e57373",
