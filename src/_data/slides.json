@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "alt": "Image 1",
+        "title": "<span class='tw-font-poppins tw-uppercase tw-font-bold'>Cafea de specialitate</span>",
+        "subtitle": "<span class='tw-font-nothing'>Zero graba. Doar vibe.</span>"
+    },
+    {
+        "id": 2,
+        "alt": "Image 2",
+        "title": "Conversatii bune.",
+        "subtitle": "<span class='tw-uppercase'>Cafea si mai buna</span>",
+        "description": "La doar 5lei"
+    },
+    {
+        "id": 3,
+        "alt": "Image 3",
+        "title": "Loc de work.<br /> <span class='tw-font-poppins tw-uppercase tw-font-bold'> Loc de vibe </span>.<br /> Loc de stat."
+    }
+]
