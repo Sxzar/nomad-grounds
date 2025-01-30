@@ -1,17 +1,18 @@
 {
-	"name": "Barvado Barber Shop",
+	"name": "Nomad Grounds",
 	"email": "contact.sxzar@gmail.com",
-	"phoneForTel": "+40728938335",
-	"phoneFormatted": "(+40) 728 938 335",
+	"phoneForTel": "(555) 55 555 555",
+	"phoneFormatted": "(555) 55 555 555",
 	"address": {
-		"lineOne": "First Address Line",
-		"lineTwo": "Second Address Line",
-		"city": "Willowbrook Heights",
-		"state": "Oregon",
-		"zip": "80206",
+		"lineOne": "Bulevardul Călătorilor",
+		"lineTwo": "Nr. 45",
+		"city": "București",
+		"state": "Sector 1",
+		"zip": "011864",
+		"country": "Romania",
 		"mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
 	},
 	"domain": "www.stefan-nicolau.com",
 	"shortDomain": "stefan-nicolau.com",
-	"description": "Located in the heart of Willowbrook Heights, Oregon, we bring sharp cuts and fresh styles to the community."
+	"description": "Cafea de specialitate, vibe nomad, locul unde wifi-ul e rapid, dar timpul curge lent."
 }
