@@ -15,8 +15,8 @@
 			</div>
             <ul class="lg:tw-flex tw-hidden">
 				{% for navPage in navPages %}
-				<li class="tw-mx-6 tw-text-xl tw-font-medium">
-					<a class="tw-text-accent-color hover:tw-text-accent tw-tracking-wider {% if loop.last %}tw-bg-accent tw-py-2 tw-px-6 hover:tw-text-primary hover:tw-opacity-90 tw-rounded-sm{% endif %} {% if navPage.url == page.url %}tw-text-accent{% endif %} {% if navPage.key==eleventyNavigation.key %}active{% endif %}"
+				<li class="tw-mx-6 tw-uppercase tw-text-sm">
+					<a class="tw-whitespace-nowrap tw-tracking-wider {% if loop.last %}tw-bg-accent tw-py-2 tw-px-6 hover:tw-text-primary hover:tw-opacity-90 tw-rounded-sm{% endif %} {% if navPage.url == page.url %}tw-text-accent {% else %}tw-text-base-100 navbar-item hover:tw-text-accent{% endif %} {% if navPage.key==eleventyNavigation.key %}active{% endif %}"
 						href="{{ navPage.url }}">
 						{{ navPage.title }}
 					</a>
@@ -41,9 +41,9 @@
 				</div>
 				<div class="tw-drawer-side">
 					<label for="my-drawer-4" aria-label="close sidebar" class="tw-drawer-overlay"></label>
-					<div class="tw-menu tw-bg-base-200 tw-text-base-content tw-min-h-full tw-w-80 tw-p-4">
+					<div class="tw-menu tw-bg-base-100 tw-text-base-content tw-min-h-full tw-w-80 tw-p-4">
 						<label for="my-drawer-4" class="tw-self-end tw-btn tw-btn-sm tw-btn-circle tw-bg-accent">
-							<svg xmlns="http://www.w3.org/2000/svg" class="tw-h-6 tw-w-6 tw-stroke-primary-content"
+							<svg xmlns="http://www.w3.org/2000/svg" class="tw-h-6 tw-w-6 tw-stroke-base-100"
 								fill="none" viewBox="0 0 24 24">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 									d="M6 18L18 6M6 6l12 12" />
@@ -52,13 +52,13 @@
 						<div class="tw-flex tw-justify-center tw-items-center tw-my-4">
 							<a href="/">
 								<picture><img src="/assets/images/logo.png" alt="{{ client.name }} logo" loading="eager"
-										decoding="async" class="tw-max-w-[150px]"></picture>
+										decoding="async" class="tw-max-w-[150px] tw-invert"></picture>
 							</a>
 						</div>
 						<ul class="tw-mt-4">
                             {% for navPage in navPages %}
-                            <li class="tw-mx-6 tw-text-xl tw-font-medium">
-                                <a class="tw-flex tw-justify-center tw-text-primary hover:tw-text-accent tw-tracking-wider {% if loop.last %}tw-bg-accent tw-py-2 tw-px-6 hover:tw-text-primary hover:tw-opacity-90 tw-rounded-sm{% endif %} {% if navPage.url == page.url %}tw-text-accent{% endif %} {% if navPage.key==eleventyNavigation.key %}active{% endif %}"
+                            <li class="tw-mx-6 tw-text-xl tw-font-medium tw-py-2">
+                                <a class="tw-whitespace-nowrap tw-flex tw-justify-center tw-text-primary hover:tw-text-accent tw-tracking-wider {% if loop.last %}tw-bg-accent tw-py-2 tw-px-6 hover:tw-text-primary hover:tw-opacity-90 tw-rounded-sm{% endif %} {% if navPage.url == page.url %}tw-text-accent{% endif %} {% if navPage.key==eleventyNavigation.key %}active{% endif %}"
                                     href="{{ navPage.url }}">
                                     {{ navPage.title }}
                                 </a>

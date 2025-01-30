@@ -55,12 +55,16 @@
 	</title>
 </head>
 
-<body class="tw-font-poppins tw-antialiased tw-bg-base-100">
+<body class="tw-font-poppins tw-antialiased tw-bg-primary tw-min-h-[400dvh]">
     <a class="sr-only" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
 
 	{% include "containers/header.html" %}
 	<main id="main">{% block body %}{% endblock %}</main>
 	{% include "containers/footer.html" %}
+	
+	{% block scripts %}
+	<script src="/assets/js/theme.js"></script>
+	{% endblock %}
 </body>
 
 </html>
