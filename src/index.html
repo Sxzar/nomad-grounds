@@ -3,8 +3,8 @@ title: "Home"
 description: "Welcome to our website."
 permalink: "/"
 eleventyNavigation:
-    key: Home
-    order: 0
+key: Home
+order: 0
 ---
 
 {% extends "layouts/base.html" %} {% block head %}
@@ -23,6 +23,12 @@ eleventyNavigation:
 <!--                   About                      -->
 <!-- ============================================ -->
 {% include 'containers/about.html' %}
+
+<!-- ============================================ -->
+<!--                     Menu                     -->
+<!-- ============================================ -->
+{% include 'containers/menu.html' %}
+
 
 
 {% endblock %}

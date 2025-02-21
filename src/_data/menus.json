@@ -1,0 +1,203 @@
+[
+    {
+        "title": "Cafea",
+        "categories": [
+            {
+                "title": "Espresso Bar",
+                "items": [
+                    {
+                        "title": "Espresso simplu",
+                        "price": 5
+                    },
+                    {
+                        "title": "Espresso dublu",
+                        "price": 7
+                    },
+                    {
+                        "title": "Espresso tonic",
+                        "price": 10
+                    },
+                    {
+                        "title": "Ristretto",
+                        "price": 10
+                    },
+                    {
+                        "title": "Americano",
+                        "price": 12
+                    }
+                ]
+            },
+            {
+                "title": "Cafea cu lapte",
+                "items": [
+                    {
+                        "title": "Flat White",
+                        "price": 15
+                    },
+                    {
+                        "title": "Cappuccino",
+                        "price": 15
+                    },
+                    {
+                        "title": "Caffe Latte",
+                        "price": 15
+                    },
+                    {
+                        "title": "Caffe Mocha",
+                        "price": 17
+                    },
+                    {
+                        "title": "Caffe Affogato",
+                        "price": 19
+                    }
+                ]
+            },
+            {
+                "title": "Brew Specialties",
+                "items": [
+                    {
+                        "title": "V60 / Pour Over",
+                        "price": 20
+                    },
+                    {
+                        "title": "Chemex",
+                        "price": 22
+                    },
+                    {
+                        "title": "Cold Brew",
+                        "price": 16
+                    },
+                    {
+                        "title": "Nitro Cold Brew",
+                        "price": 20
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Mâncare",
+        "categories": [
+            {
+                "title": "Mic Dejun & Brunch",
+                "items": [
+                    {
+                        "title": "Croissant simplu / cu unt",
+                        "price": 10
+                    },
+                    {
+                        "title": "Toast cu avocado & ou poșat",
+                        "price": 26
+                    },
+                    {
+                        "title": "Granola cu iaurt grecesc și fructe",
+                        "price": 24
+                    },
+                    {
+                        "title": "Banana Bread cu unt de arahide",
+                        "price": 16   
+                    }
+                ]
+            },
+            {
+                "title": "Sandwich-uri & Gustari",
+                "items": [
+                    {
+                        "title": "Sandwich cu somon & cremă de brânză",
+                        "price": 28
+                    },
+                    {
+                        "title": "Toast cu hummus & legume coapte",
+                        "price": 26
+                    },
+                    {
+                        "title": "Quiche cu spanac & brânză feta",
+                        "price": 26
+                    }
+                ]
+            },
+            {
+                "title": "Deserturi",
+                "items": [
+                    {
+                        "title": "Cheesecake cu fructe de pădure",
+                        "price": 18
+                    },
+                    {
+                        "title": "Tiramisu clasic",
+                        "price": 20
+                    },
+                    {
+                        "title": "Clătite cu sirop de arțar",
+                        "price": 20
+                    },
+                    {
+                        "title": "Brownie cu ciocolată neagră",
+                        "price": 16
+                    }
+                ]
+            }
+        ]
+
+    },
+    {
+        "title": "Băuturi",
+        "categories": [
+            {
+                "title": "Ceaiuri & Infuzii",
+                "items": [
+                    {
+                        "title": "Ceai negru / verde / alb",
+                        "price": 12
+                    },
+                    {
+                        "title": "Infuzie de plante (mentă, ghimbir, fructe de pădure)",
+                        "price": 14
+                    },
+                    {
+                        "title": "Matcha Latte",
+                        "price": 20
+                    },
+                    {
+                        "title": "Chai Latte",
+                        "price": 18
+                    }
+                ]
+            },
+            {
+                "title": "Fresh & Limonade",
+                "items": [
+                    {
+                        "title": "Fresh portocale / grapefruit",
+                        "price": 18
+                    },
+                    {
+                        "title": "Limonadă clasică / cu ghimbir & miere",
+                        "price": 18
+                    },
+                    {
+                        "title": "Ice Tea de casă (piersici, fructe de pădure)",
+                        "price": 16
+                    }
+                ]
+            },
+            {
+                "title": "Milkshakes & Alternative Drinks",
+                "items": [
+                    {
+                        "title": "Milkshake ciocolată / vanilie / caramel sărat",
+                        "price": 20
+                    },
+                    {
+                        "title": "Golden Milk (lapte cu turmeric și scorțișoară)",
+                        "price": 18
+                    },
+                    {
+                        "title": "Băutură cu lapte de ovăz și scorțișoară",
+                        "price": 18
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,42 +1,53 @@
-<section class="tw--mt-[115px] tw-overflow-hidden tw-relative tw-z-10" id="hero">
-	<div class="tw-carousel tw-w-full lg:tw-h-dvh tw-h-dvh">
-        <h1 class="sr-only">{{ client.name }}</h1>
-	  {% for i in range(0, slides | length) %}
-		<div id="slide{{ i + 1 }}" class="tw-carousel-item tw-relative tw-w-full {% if i == 0 %}tw-carousel-item-active{% endif %}">
-		  <div class="after:tw-absolute after:tw-top-0 after:tw-left-0 after:tw-bg-black after:tw-h-dvh after:tw-w-full after:tw-opacity-35 tw-overflow-hidden">
-			<picture>
-                <source srcset="/assets/images/hero/slide-{{i+1}}/xs.webp" type="image/webp" media="(max-width: 475px)">
-                <source srcset="/assets/images/hero/slide-{{i+1}}/sm.webp" type="image/webp" media="(min-width: 476px) and (max-width: 640px)">
-                <source srcset="/assets/images/hero/slide-{{i+1}}/md.webp" type="image/webp" media="(min-width: 641px) and (max-width: 768px)">
-                <source srcset="/assets/images/hero/slide-{{i+1}}/lg.webp" type="image/webp" media="(min-width: 769px) and (max-width: 1024px)">
-                <source srcset="/assets/images/hero/slide-{{i+1}}/xl.webp" type="image/webp" media="(min-width: 1025px) and (max-width: 1280px)">
-                <source srcset="/assets/images/hero/slide-{{i+1}}/2xl.webp" type="image/webp" media="(min-width: 1281px) and (max-width: 1536px)">
-                <source srcset="/assets/images/hero/slide-{{i+1}}/original.webp" type="image/webp" media="(min-width: 1537px)">
-			  <img src="/assets/images/hero/slide-{{i+1}}/original.jpg" class="tw-w-dvw lg:tw-h-dvh tw-h-dvh tw-object-cover tw-object-top tw-carousel-image" alt="{slides[i].alt}" decoding="async" loading="eager" />
-			</picture>
-		  </div>
-		  <div class="grow tw-absolute tw-text-center tw-text-white tw-z-10">
-            {% if slides[i] === slides[0] %}
-                <picture>
-                    <img src="/assets/images/logo.png" alt="{{client.name}}" class="tw-w-[250px] tw-mx-auto tw-mb-10" />
-                </picture>
-            {% endif %}
-			<h2 class="tw-font-nothing lg:tw-text-6xl tw-text-4xl">{{ slides[i].title | safe}}</h2>
-            {% if slides[i].subtitle %}
-            <h3 class="lg:tw-text-6xl tw-text-4xl tw-font-bold tw-my-4"> {{ slides[i].subtitle | safe}}</h3>
-            {% endif %}
-            {% if slides[i].description %}
-                <p class="tw-mb-4 tw-font-nothing tw-text-4xl">{{ slides[i].description | safe}}</p>
-            {% endif %}
-           
-		  </div>
-		  <div class="slide-controls tw-absolute tw-left-5 tw-right-5 tw-bottom-4 tw--translate-y-1/2 tw-transform tw-justify-center tw-opacity-0 tw-transition-opacity tw-duration-300 tw-ease-in-out tw-flex">
-			{% set prevSlide = (i == 0) and (slides | length) or i %}
-			{% set nextSlide = (i == slides | length - 1) and 1 or i + 2 %}
-			<a href="#slide{{ prevSlide }}" class="tw-btn tw-btn-circle tw-m-4">❮</a>
-			<a href="#slide{{ nextSlide }}" class="tw-btn tw-btn-circle tw-m-4">❯</a>
-		  </div>
-		</div>
-	  {% endfor %}
-	</div>
-  </section>
+<section class="tw--mt-[116px] tw-overflow-hidden tw-relative tw-z-10" id="hero">
+  <div class="tw-carousel tw-w-full lg:tw-h-dvh tw-h-dvh">
+    <h1 class="sr-only">{{ client.name }}</h1>
+    {% for i in range(0, slides | length) %}
+    <div id="slide{{ i + 1 }}"
+      class="tw-carousel-item tw-relative tw-w-full {% if i == 0 %}tw-carousel-item-active{% endif %}">
+      <div
+        class="after:tw-absolute after:tw-top-0 after:tw-left-0 after:tw-bg-black after:tw-h-dvh after:tw-w-full after:tw-opacity-35 tw-overflow-hidden">
+        <picture>
+          <source srcset="/assets/images/hero/slide-{{i+1}}/xs.webp" type="image/webp" media="(max-width: 475px)">
+          <source srcset="/assets/images/hero/slide-{{i+1}}/sm.webp" type="image/webp"
+            media="(min-width: 476px) and (max-width: 640px)">
+          <source srcset="/assets/images/hero/slide-{{i+1}}/md.webp" type="image/webp"
+            media="(min-width: 641px) and (max-width: 768px)">
+          <source srcset="/assets/images/hero/slide-{{i+1}}/lg.webp" type="image/webp"
+            media="(min-width: 769px) and (max-width: 1024px)">
+          <source srcset="/assets/images/hero/slide-{{i+1}}/xl.webp" type="image/webp"
+            media="(min-width: 1025px) and (max-width: 1280px)">
+          <source srcset="/assets/images/hero/slide-{{i+1}}/2xl.webp" type="image/webp"
+            media="(min-width: 1281px) and (max-width: 1536px)">
+          <source srcset="/assets/images/hero/slide-{{i+1}}/original.webp" type="image/webp"
+            media="(min-width: 1537px)">
+          <img src="/assets/images/hero/slide-{{i+1}}/original.jpg"
+            class="tw-w-dvw lg:tw-h-dvh tw-h-dvh tw-object-cover tw-object-top tw-carousel-image" alt="{slides[i].alt}"
+            decoding="async" loading="eager" />
+        </picture>
+      </div>
+      <div class="grow tw-absolute tw-text-center tw-text-white tw-z-10">
+        {% if slides[i] === slides[0] %}
+        <picture>
+          <img src="/assets/images/logo.png" alt="{{client.name}}" class="tw-w-[250px] tw-mx-auto tw-mb-10" />
+        </picture>
+        {% endif %}
+        <h2 class="tw-font-nothing lg:tw-text-6xl tw-text-4xl">{{ slides[i].title | safe}}</h2>
+        {% if slides[i].subtitle %}
+        <h3 class="lg:tw-text-6xl tw-text-4xl tw-font-bold tw-my-4"> {{ slides[i].subtitle | safe}}</h3>
+        {% endif %}
+        {% if slides[i].description %}
+        <p class="tw-mb-4 tw-font-nothing tw-text-4xl">{{ slides[i].description | safe}}</p>
+        {% endif %}
+
+      </div>
+      <div
+        class="slide-controls tw-absolute tw-left-5 tw-right-5 tw-bottom-4 tw--translate-y-1/2 tw-transform tw-justify-center tw-opacity-0 tw-transition-opacity tw-duration-300 tw-ease-in-out tw-flex">
+        {% set prevSlide = (i == 0) and (slides | length) or i %}
+        {% set nextSlide = (i == slides | length - 1) and 1 or i + 2 %}
+        <a href="#slide{{ prevSlide }}" class="tw-btn tw-btn-circle tw-m-4">❮</a>
+        <a href="#slide{{ nextSlide }}" class="tw-btn tw-btn-circle tw-m-4">❯</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
