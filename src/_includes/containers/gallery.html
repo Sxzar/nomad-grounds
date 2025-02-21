@@ -1,0 +1,55 @@
+<section class="tw-py-20">
+    <div class="tw-max-w-screen-lg tw-mx-auto tw-grid lg:tw-grid-cols-2 lg:tw-p-0 tw-p-4">
+        <div class="lg:tw-max-w-xs lg:tw-mb-0 tw-mb-10">
+            <h2 class="lg:tw-text-6xl tw-text-4xl tw-font-nothing tw-mb-10 lg:tw-text-left tw-text-center">Savureaza.
+                Fotografiaza. Inspira.
+            </h2>
+            <p>
+                La Nomad Grounds, fiecare colț spune o poveste – de la latte art perfect la lumina caldă care
+                îmbrățișează fiecare ceașcă. Fie că îți surprinzi cafeaua de dimineață sau un moment cozy cu prietenii,
+                aici totul e instagramabil. Tag us & share the vibe! <strong>#NomadGrounds</strong>
+            </p>
+        </div>
+        <div class="tw-grid tw-grid-cols-3 tw-gap-2">
+            {% for image in gallery %}
+            {% include 'components/gallery-modal.html' %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<script>
+
+    const images = document.querySelectorAll('.gallery-image');
+    const modals = document.querySelectorAll('.gallery-modal');
+
+    images.forEach((image, index) => {
+        image.addEventListener('click', () => {
+            modals[index].classList.remove('tw-hidden');
+        });
+    });
+
+    modals.forEach((modal) => {
+        modal.addEventListener('click', (e) => {
+            if (e.target.classList.contains('tw-fixed')) {
+                modal.classList.add('tw-hidden');
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                modal.classList.add('tw-hidden');
+            }
+        });
+
+        const close = modal.querySelector('.gallery-modal-close');
+
+        close.addEventListener('click', () => {
+            modal.classList.add('tw-hidden');
+        });
+
+    });
+
+
+
+</script>

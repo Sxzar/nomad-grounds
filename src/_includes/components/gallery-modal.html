@@ -1,0 +1,29 @@
+<article>
+    <div class="tw-overflow-hidden tw-relative">
+        <picture>
+            <img src="/assets/images/gallery/{{image}}.jpg" alt="{{ image }}" width="160" height="110"
+                class="gallery-image tw-w-full tw-max-w-[160px] tw-h-[110px] tw-h-full tw-object-cover tw-cursor-pointer hover:tw-scale-110 tw-transition tw-duration-300"
+                loading="lazy" decoding="async" />
+        </picture>
+    </div>
+
+    <div
+        class="gallery-modal tw-hidden tw-fixed tw-inset-0 tw-bg-black tw-bg-opacity-75 tw-z-50 tw-flex tw-items-center tw-justify-center">
+        <div
+            class="tw-w-11/12 tw-h-11/12 tw-max-w-[800px] tw-max-h-[600px] tw-bg-white tw-shadow-lg tw-rounded-lg tw-overflow-hidden tw-flex tw-flex-col tw-justify-center tw-items-center">
+            <button
+                class="gallery-modal-close tw-absolute tw-top-10 tw-right-10 tw-m-4 tw-text-2xl tw-text-gray-800 tw-bg-white tw-rounded-full tw-p-2 tw-shadow-lg tw-transition tw-duration-300 tw-transform hover:tw-rotate-180"
+                aria-label="Close modal">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24"
+                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+            <img src="/assets/images/gallery/{{image}}.jpg" alt="{{ image }}"
+                class="tw-w-full tw-h-full tw-object-cover" loading="lazy" decoding="async" />
+        </div>
+    </div>
+</article>
