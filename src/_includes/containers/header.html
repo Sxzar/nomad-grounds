@@ -6,17 +6,18 @@
 
 	<!-- Render Menu -->
 	<nav class="tw-py-2 tw-w-full" id="navbar">
-		<div class="tw-container tw-mx-auto tw-flex lg:tw-justify-between tw-items-center tw-font-bold tw-max-w-screen-lg"> 
+		<div
+			class="tw-container tw-mx-auto tw-flex lg:tw-justify-between tw-items-center tw-font-bold tw-max-w-screen-lg">
 			<div class="lg:tw-p-0 tw-p-4 tw-flex tw-justify-center">
 				<a href="/">
-					<picture><img src="/assets/images/logo.png" class="logo tw-max-h-[100px]" alt="{{ client.name }} logo" loading="eager"
-							decoding="async"></picture>
+					<picture><img src="/assets/images/logo.png" class="logo tw-max-h-[100px]"
+							alt="{{ client.name }} logo" loading="eager" decoding="async"></picture>
 				</a>
 			</div>
-            <ul class="lg:tw-flex tw-hidden">
+			<ul class="lg:tw-flex tw-hidden">
 				{% for navPage in navPages %}
 				<li class="tw-mx-6 tw-uppercase tw-text-sm">
-					<a class="tw-whitespace-nowrap tw-tracking-wider {% if loop.last %}tw-bg-accent tw-py-2 tw-px-6 hover:tw-text-primary hover:tw-opacity-90 tw-rounded-sm{% endif %} {% if navPage.url == page.url %}tw-text-accent {% else %}tw-text-base-100 navbar-item hover:tw-text-accent{% endif %} {% if navPage.key==eleventyNavigation.key %}active{% endif %}"
+					<a class="tw-whitespace-nowrap tw-tracking-wider {% if loop.last %}tw-bg-accent tw-py-2 tw-px-6 tw-text-white hover:tw-text-white hover:tw-opacity-90 tw-rounded-sm{% endif %} {% if navPage.url == page.url %}tw-text-accent {% else %}tw-text-base-100 navbar-item hover:tw-text-accent{% endif %} {% if navPage.key==eleventyNavigation.key %}active{% endif %}"
 						href="{{ navPage.url }}">
 						{{ navPage.title }}
 					</a>
@@ -43,8 +44,8 @@
 					<label for="my-drawer-4" aria-label="close sidebar" class="tw-drawer-overlay"></label>
 					<div class="tw-menu tw-bg-base-100 tw-text-base-content tw-min-h-full tw-w-80 tw-p-4">
 						<label for="my-drawer-4" class="tw-self-end tw-btn tw-btn-sm tw-btn-circle tw-bg-accent">
-							<svg xmlns="http://www.w3.org/2000/svg" class="tw-h-6 tw-w-6 tw-stroke-base-100"
-								fill="none" viewBox="0 0 24 24">
+							<svg xmlns="http://www.w3.org/2000/svg" class="tw-h-6 tw-w-6 tw-stroke-base-100" fill="none"
+								viewBox="0 0 24 24">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 									d="M6 18L18 6M6 6l12 12" />
 							</svg>
@@ -56,18 +57,18 @@
 							</a>
 						</div>
 						<ul class="tw-mt-4">
-                            {% for navPage in navPages %}
-                            <li class="tw-mx-6 tw-text-xl tw-font-medium tw-py-2">
-                                <a class="tw-whitespace-nowrap tw-flex tw-justify-center tw-text-primary hover:tw-text-accent tw-tracking-wider {% if loop.last %}tw-bg-accent tw-py-2 tw-px-6 hover:tw-text-primary hover:tw-opacity-90 tw-rounded-sm{% endif %} {% if navPage.url == page.url %}tw-text-accent{% endif %} {% if navPage.key==eleventyNavigation.key %}active{% endif %}"
-                                    href="{{ navPage.url }}">
-                                    {{ navPage.title }}
-                                </a>
-                            </li>
-                            {% endfor %}
-                        </ul>
-					</ul>
+							{% for navPage in navPages %}
+							<li class="tw-mx-6 tw-text-xl tw-font-medium tw-py-2">
+								<a class="tw-whitespace-nowrap tw-flex tw-justify-center tw-text-primary hover:tw-text-accent tw-tracking-wider {% if loop.last %}tw-bg-accent tw-py-2 tw-px-6 hover:tw-text-primary hover:tw-opacity-90 tw-rounded-sm{% endif %} {% if navPage.url == page.url %}tw-text-accent{% endif %} {% if navPage.key==eleventyNavigation.key %}active{% endif %}"
+									href="{{ navPage.url }}">
+									{{ navPage.title }}
+								</a>
+							</li>
+							{% endfor %}
+						</ul>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
 	</nav>
 </header>
