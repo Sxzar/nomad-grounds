@@ -17,39 +17,3 @@
         </div>
     </div>
 </section>
-
-<script>
-
-    const images = document.querySelectorAll('.gallery-image');
-    const modals = document.querySelectorAll('.gallery-modal');
-
-    images.forEach((image, index) => {
-        image.addEventListener('click', () => {
-            modals[index].classList.remove('tw-hidden');
-        });
-    });
-
-    modals.forEach((modal) => {
-        modal.addEventListener('click', (e) => {
-            if (e.target.classList.contains('tw-fixed')) {
-                modal.classList.add('tw-hidden');
-            }
-        });
-
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                modal.classList.add('tw-hidden');
-            }
-        });
-
-        const close = modal.querySelector('.gallery-modal-close');
-
-        close.addEventListener('click', () => {
-            modal.classList.add('tw-hidden');
-        });
-
-    });
-
-
-
-</script>

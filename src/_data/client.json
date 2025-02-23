@@ -12,6 +12,16 @@
 		"country": "Romania",
 		"mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
 	},
+	"schedule": [
+		{
+			"day": "Luni - Vineri",
+			"hours": "10:00 - 23:00"
+		},
+		{
+			"day": "Sâmbătă - Duminică",
+			"hours": "10:00 - 16:00"
+		}
+	],
 	"domain": "www.stefan-nicolau.com",
 	"shortDomain": "stefan-nicolau.com",
 	"description": "Cafea de specialitate, vibe nomad, locul unde wifi-ul e rapid, dar timpul curge lent."

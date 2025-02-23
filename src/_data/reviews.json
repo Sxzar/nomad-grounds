@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Alex M.",
+        "rating": 5,
+        "title": "Perfect pt work",
+        "review": "Super cozy, cafeaua e 🔥 si muzica nu te face sa vrei sa pleci. Ideal pt work-from-cafe days, wifi rapid, enough outlets si flat white-ul best in town"
+    },
+    {
+        "name": "Andrei C.",
+        "rating": 5,
+        "title": "Cel mai bun espresso",
+        "review": "Daca esti coffee snob si cauti un espresso bun, Nomad Grounds e locul. Nici amar, nici acru, just right. Se vede ca barista stie ce face."
+    },
+    {
+        "name": "Bianca R.",
+        "rating": 5,
+        "title": "Atmosfera chill, dar si super instagramabil",
+        "review": "Nu e genul ala de loc unde vii doar sa faci poze, dar damn, totul arata prea bine. Cafeaua, luminile, chiar si cestile. Bonus: cappuccino-ul chiar e bun, nu doar arata bine."
+    },
+    {
+        "name": "Vlad D.",
+        "rating": 5,
+        "title": "Am devenit fan cold brew",
+        "review": "Am luat de curiozitate si wow, n-am stiut ca poate fi ataaaat de bun. Fresh, racoritor si fara aftertaste amar. Data viitoare incerc si nitro brew-ul."
+    },
+    {
+        "name": "Elena S.",
+        "rating": 5,
+        "title": "Croissant + cappuccino = dream combo",
+        "review": "E genul de loc unde vii cu gandul sa bei doar o cafea si ajungi sa stai 2 ore. Atmosfera e prea buna, muzica e chill si cafeaua e fix cum trebuie."
+    },
+    {
+        "name": "Diana T.",
+        "rating": 5,
+        "title": "Staff super friendly ",
+        "review": "Oamenii de aici chiar fac diferenta. Mi-au recomandat un pour over si l-au preparat ca la carte. Daca esti coffee geek, ai ce incerca aici."
+    }
+]

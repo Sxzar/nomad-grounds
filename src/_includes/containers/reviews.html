@@ -1,0 +1,17 @@
+<section
+    class="tw-min-h-[80dvh] tw-bg-fixed tw-bg-center tw-bg-cover tw-bg-no-repeat tw-bg-[url('/assets/images/coffee-shop-bg.jpg')] tw-relative">
+    <div
+        class="tw-bg-[url('/assets/images/decorations/triangle-divider-top.png')] tw-w-full tw-h-[20px] tw-bg-repeat-x tw-absolute tw-top-[-1px] tw-z-20">
+    </div>
+    <div class="tw-min-h-[80dvh] tw-bg-black tw-bg-opacity-60 tw-flex tw-justify-center tw-items-center">
+        <div class="tw-max-w-screen-lg tw-mx-auto tw-flex tw-overflow-x-scroll tw-py-20 tw-px-4 tw-snap-x">
+            {% for review in reviews %}
+            {% include 'components/review-card.html' %}
+            {% endfor %}
+        </div>
+
+    </div>
+    <div
+        class="tw-bg-[url('/assets/images/decorations/triangle-divider-top.png')] tw-w-full tw-h-[20px] tw-bg-repeat-x tw-absolute tw-bottom-[-1px] tw-z-20 tw-rotate-180">
+    </div>
+</section>
