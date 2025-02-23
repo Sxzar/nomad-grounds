@@ -1,5 +1,5 @@
-<section
-    class="tw-relative tw-z-[10] tw-bg-black tw-bg-[url('/assets/images/menu-background.png')] tw-bg-fixed  lg:tw-bg-contain tw-bg-cover tw-bg-no-repeat tw-bg-right tw-relative tw-mt-20">
+<section id="menu"
+    class="tw-relative tw-z-[10] tw-bg-black tw-bg-[url('/assets/images/menu-background.png')] tw-bg-fixed  lg:tw-bg-contain tw-bg-cover tw-bg-no-repeat tw-bg-right tw-relative tw-mt-20 tw-scroll-mt-[200px]">
     <div
         class="tw-bg-[url('/assets/images/decorations/triangle-divider-top.png')] tw-w-full tw-h-[20px] tw-bg-repeat-x tw-absolute tw-top-[-1px] tw-z-20">
     </div>
@@ -33,39 +33,3 @@
         class="tw-bg-[url('/assets/images/decorations/triangle-divider-top.png')] tw-w-full tw-h-[20px] tw-bg-repeat-x tw-absolute tw-bottom-[-1px] tw-z-20 tw-rotate-180">
     </div>
 </section>
-
-<script>
-    const slides = document.querySelectorAll(".carousel-slide");
-    const bulletsContainer = document.getElementById("bullets");
-    let currentIndex = 0;
-
-    function updateCarousel(index) {
-        slides.forEach((slide, i) => {
-            slide.classList.toggle("tw-hidden", i !== index);
-            slide.classList.toggle("tw-block", i === index);
-        });
-        document.querySelectorAll(".bullet").forEach((bullet, i) => {
-            bullet.classList.toggle("active", i === index);
-        });
-    }
-
-    function createBullets() {
-        slides.forEach((_, index) => {
-            const bullet = document.createElement("div");
-            bullet.classList.add("bullet");
-            bullet.addEventListener("click", () => updateCarousel(index));
-            bulletsContainer.appendChild(bullet);
-        });
-    }
-
-    function startCarousel() {
-        createBullets();
-        updateCarousel(0);
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % slides.length;
-            updateCarousel(currentIndex);
-        }, 8000);
-    }
-
-    startCarousel();
-</script>
